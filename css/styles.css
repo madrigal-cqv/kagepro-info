@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+html { 
+    background: url(../images/summertimerecord2.png) no-repeat center center fixed; 
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+.main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    gap: 1em;
+    padding-bottom: 50px;
+}
+
+.menu {
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2em;
+    width: 15%;
+    background-color: rgba(0, 0, 0, 0.75);
+    margin-top: 3%;
+    height: 85vh;
+    position: sticky;
+    top: 5%;
+    border: 2px dashed gray;
+    line-height: 3em;
+    text-transform: uppercase;
+}
+
+.menu ul {
+    list-style: none;
+    padding-top: 8%;
+    padding-left: 12%;
+}
+
+.menu a {
+    color: #f7efdf;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: line-through;
+}
+
+.content {
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    color:#f7efdf;
+    width: 84%;
+    background-color: rgba(0, 0, 0, 0.75);
+    margin-top: 3%;
+    min-height: 85vh;
+    border: 2px dashed gray;
+}
+
+h1 {
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 1.5% 5% 1.5% 5%;
+}
+
+#logo {
+    display: block;
+    margin: auto;
+    float: right;
+    padding-right: 5%;
+    width: 50%;
+}
+
+p {
+    font-weight: 200;
+    padding: 0 5% 1.5% 5%;
+    letter-spacing: 0.1em;
+    text-align: justify;
+}
+
+p a {
+    color: #f7efdf;
+}
+
+.imgwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 2em;
+    justify-content: center;
+}
+
+#char_img {
+    gap: 5px;
+}
+
+#char_img img {
+    height: 190px;
+    object-fit: contain;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h2, h3 {
+    padding-left: 5%;
+    line-height: 5px;
+}
+
+#no0, #no7 {
+    color: #ff2c10;
+}
+
+#no1 {
+    color: #9e00fd;
+}
+
+#no2 {
+    color: #0cf60c;
+}
+
+#no3 {
+    color: gray;
+}
+
+#no4 {
+    color: #ff88c9;
+}
+
+#no5 {
+    color: #fe8903;
+}
+
+#no6 {
+    color: #0783ff;
+}
+
+#no8 {
+    color: #00e3fd;
+}
+
+#no9 {
+    color: #e3ff04;
+}
+
+#album_img {
+    gap: 10px;
+}
+
+#album_img img {
+    height: 200px;
+    object-fit: contain;
+}
+
+.albumwrapper {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding-bottom: 2em;
+}
+
+.cover {
+    width: 55%;
+    padding-bottom: 1em;
+}
+
+.cover img {
+    width: 100%;
+}
+
+.tracklist {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 3%;
+}
+
+.tracklist > li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: baseline;
+    padding-bottom: 12px;
+    padding-bottom: 8px;
+}
+
+li > p {
+    margin: 0;
+    line-height: 1.1;
+}
+
+#backtotop {
+    position: fixed;
+    width: 50px;
+    bottom: 35px;
+    right: 1.5%;
+    max-width: fit-content;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 10px;
+    border: 1px dashed grey;
+    border-radius: 1em;
+}
+
+#backtotop img {
+    width: 40px;
+}
+
+footer {
+    background-color: black;
+    color: #f7efdf;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2em;
+}
+
+footer a {
+    color: #f7efdf;
+}
+
+#novel_img {
+    gap: 5px;
+}
+
+#novel_img img {
+    width: 18%;
+}
+
+#manga_img {
+    gap: 5px;
+}
+
+#manga_img img {
+    width: 18%;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-bottom: 3em;
+}
+
+td:nth-child(odd) {
+    text-align: center;
+}
+
+th, td {
+    border: 0.5px solid #f7efdf;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media (max-width: 1135px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 92%;
+        height: auto;
+        position: sticky;
+        top: 0;
+        justify-content: space-evenly;
+        margin: auto;
+        text-align: center;
+    }
+
+    .menu ul, li {
+        display: inline;
+        padding: 0%;
+    }
+
+    li {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .content {
+        width: 92%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .main {
+        padding-bottom: 100px;
+    }
+    
+    .albumwrapper {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .cover {
+        width: 100%;
+    }
+
+    .tracklist {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    li p {
+        padding-left: 0;
+    }
+
+    #novel_img img {
+        width: 30%;
+    }
+
+    #manga_img img {
+        width: 30%;
+    }
+
+    #backtotop {
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    #album_img img {
+        width: 210px;
+        height: auto;
+    }
+
+}
