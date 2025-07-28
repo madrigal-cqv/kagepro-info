@@ -1,2 +1,2 @@
 # kagepro-info
-A simple website for Kagerou Project information
+A simple website for Kagerou Project information.
